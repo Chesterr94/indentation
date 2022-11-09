@@ -1,0 +1,13 @@
+.main-wraper-block{
+  display: flex;
+
+}
+
+.main-wraper-block-figure{
+  width: 560px;
+  height: 415px;
+}
+
+.main-wraper-block-text{
+  width: 490px;
+}

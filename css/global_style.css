@@ -1,7 +1,11 @@
 @font-face {
   font-family: "roboto";
-  src: url("../fons/roboto.woff2") format("woff2"),
-  url("../fons/roboto.woff") format("woff ");
+  src: url("../fons/roboto-v30-latin_cyrillic-regular.woff2") format("woff2"),
+  url("../fons/roboto-v30-latin_cyrillic-regular.woff") format("woff "),
+  url("../fons/roboto-v30-latin_cyrillic-700.woff2") format("woff2"),
+  url("../fons/roboto-v30-latin_cyrillic-700.woff") format("woff"),
+  url("../fons/roboto-v30-latin_cyrillic-900.woff2") format("woff2"),
+  url("../fons/roboto-v30-latin_cyrillic-900.woff") format("woff");
 }
 
 html {
@@ -16,12 +20,11 @@ html {
 }
 
 body {
-  min-width: 320px;
-  min-height: 100vh;
   font-family: "roboto";
+  font-style: normal;
   font-weight: 400;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 120%;
 }
 
 
@@ -81,7 +84,50 @@ iframe {
 */
 
 .container {
-  max-width: 1240px;
-  padding: 0 30px;
+  display: block;
+  width: 1080px;
+  margin: 0 auto  ;
+}
+
+.title-h2{
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.text{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  padding-bottom: 30px;
+}
+
+.text:last-child{
+  padding-bottom: 0;
+}
+
+.text__last{
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+}
+
+.img{
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.img__spec{
+  padding-bottom: 30px;
+}
+
+.figure{
   margin: 0 auto;
 }

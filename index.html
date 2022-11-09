@@ -17,24 +17,23 @@
       <div class="container">
         <div class="wraper-header-content">
           <h1 class="wraper-header-content-title-h1 title-h1">Отступы в вёрстке: margin и padding</h1>
-          <p class="raper-header-content-text">В этой статье я рассмотрю самые популярные "стандартные" 
+          <p class="raper-header-content-text text">В этой статье я рассмотрю самые популярные "стандартные" 
             решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об 
             основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, 
             если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие 
             части кода продолжат нормально работать.
           </p>
-          <p class="raper-header-content-text">Как это часто бывает, знание базовых принципов поможет 
+          <p class="raper-header-content-text text">Как это часто бывает, знание базовых принципов поможет 
             проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также 
             будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о 
-            фундаментальных основах работы с отступами в вёрстке.
-          </p>
+            фундаментальных основах работы с отступами в вёрстке.</p>
         </div>
       </div>
-      <div class="container">
+      <div class="container-nav">
         <div class="wraper-header-nav">
-          <h2 class="wraper-header-nav-title-h2 title-h2">Содержание</h2>
+          <h2 class="wraper-header-nav-title-h2">Содержание:</h2>
           <ol class="wraper-header-nav-list">
-            <li class="wraper-header-nav-list-li"><a href="#part-1"> Отступ задается от придедущего єлемента к следующему</a></li>
+            <li class="wraper-header-nav-list-li"><a href="#part-1">Отступ задается от придедущего элемента к следующему</a></li>
             <li class="wraper-header-nav-list-li"><a href="#part-2">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
             <li class="wraper-header-nav-list-li"><a href="#part-3">Для последнего элемента отступ обнуляется</a></li>
           </ol>
@@ -45,89 +44,87 @@
   <main class="main">
     <section class="main-wraper">
       <div class="container">
-        <div class="main-wraper-block">
-          <h2 class="main-wraper-block-title-h2 title-h2" id="part-1">Отступ задается от предыдущего элемента к следующему: 
+        <h2 class="main-wraper-title-h2 title-h2" id="part-1">Отступ задается от предыдущего элемента к следующему: 
             от первого ко второму, сверху вниз, слева направо.</h2>
-          <figure class="main-wraper-block-figure">
-            <img class="main-wraper-block-img" src="/img/main-wraper-block/image1.jpg" alt="4 эелемента с отступами" width="560" height="415">
+        <div class="main-wraper-block">
+          <figure class="main-wraper-block-figure figure">
+            <img class="main-wraper-block-img img" src="/img/main-wraper-block/image1.jpg" alt="4 эелемента с отступами" width="560" height="415">
           </figure>
-          <p class="main-wraper-block-text">ВАЖНО: margin всегда задают от предыдущего элемента к следующему.</p>
-          <p class="main-wraper-block-text">Свойство margin необходимо только для того, чтобы отодвинуть своего соседа 
+          <p class="main-wraper-block-text  text">ВАЖНО: margin всегда задают от предыдущего элемента к следующему.</p>
+          <p class="main-wraper-block-text  text">Свойство margin необходимо только для того, чтобы отодвинуть своего соседа 
             справа или снизу, поэтому используется margin-right и margin-bottom.</p>
-          <p class="main-wraper-block-text">(!) Свойства margin-left и margin-top используются крайне редко.</p>
-          <p class="main-wraper-block-text">Для padding верно обратное. Исключением является его применения в 
+          <p class="main-wraper-block-text text">(!) Свойства margin-left и margin-top используются крайне редко.</p>
+          <p class="main-wraper-block-text  text__last">Для padding верно обратное. Исключением является его применения в 
             декоративных целях, например, для увеличения области ссылки.</p>
-          <figure class="main-wraper-block-figure-2">
-            <img class="main-wraper-block-img-2" src="/img/main-wraper-block/image2.jpg" alt="пример изображения с отступами сверху" width="560" height="279">
+          <figure class="main-wraper-block-figure-2 figure">
+            <img class="main-wraper-block-img-2 img" src="/img/main-wraper-block/image2.jpg" alt="пример изображения с отступами сверху" width="560" height="279">
           </figure>
-          <p class="main-wraper-block-text-2">Отступ внутри блока сверху или слева реализуется через padding-top и 
+          <p class="main-wraper-block-text-2  text">Отступ внутри блока сверху или слева реализуется через padding-top и 
             padding-left родителя.</p>
-          <p class="main-wraper-block-text-2">Отступы, как правило, делают в направлении от предыдущего элемента к 
+          <p class="main-wraper-block-text-2  text">Отступы, как правило, делают в направлении от предыдущего элемента к 
             следующему. Так элемент не будет толкать сам себя.</p>
-          <p class="main-wraper-block-text-2">Изначально элемент статичен, а его положение может меняться только под 
+          <p class="main-wraper-block-text-2 text">Изначально элемент статичен, а его положение может меняться только под 
             воздействием свойств других блоков или свойств родителя.</p>
         </div>
       </div>
     </section>
-    <section class="main-wraper">
+    <section class="main-wraper-next">
       <div class="main-wraper-block-2">
         <div class="container">
           <h2 class="main-wraper-block-2-title-h2 title-h2" id="part-2">Отступ задается последнему возможному элементу в DOM-дереве</h2>
-          <p class="main-wraper-block-2-text text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. 
+          <p class="main-wraper-block-2-text text__last">Вообще, margin задают исключительно между соседними элементами DOM-дерева. 
             Для примера, посмотрите на этот список:</p>
-          <figure class="main-wraper-block-2-figure">
-            <img class="main-wraper-block-2-img" src="/img/main-wraper-block/image3.jpg" alt="Пример кода" width="1080" height="537">
+          <figure class="main-wraper-block-2-figure figure">
+            <img class="main-wraper-block-2-img img" src="/img/main-wraper-block/image3.jpg" alt="Пример кода" width="1080" height="537">
+            <img class="main-wraper-block-2-img img__spec" src="/img/main-wraper-block/image4.jpg" alt="Пример отступов" width="600" height="450">
           </figure>
-          <figure class="main-wraper-block-2-figure">
-            <img class="main-wraper-block-2-img" src="/img/main-wraper-block/image4.jpg" alt="Пример отступов" width="600" height="450">
-          </figure>
-          <p class="main-wraper-block-2-text text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
-          <figure class="main-wraper-block-2-figure__border">
-            <img class="main-wraper-block-2-figure__border-img" src="/img/main-wraper-block/image5.jpg" alt="изображение поделено на две части в 
+          <p class="main-wraper-block-2-text text__last">Отступ делают за счёт соседних элементов, а не дочерних:</p>
+          <figure class="main-wraper-block-2-figure__border figure">
+            <img class="main-wraper-block-2-figure__border-img img" src="/img/main-wraper-block/image5.jpg" alt="изображение поделено на две части в 
               первой текст с отсутпами во второй код расписаными отсутпами">
-            <figcaption class="main-wraper-block-2-figure__border-text">ВАЖНО: здесь .list-item — последний возможный элемент в котором мы задаём 
-              отступ, чтобы разделить списки.</figcaption>
+            <p class="main-wraper-block-2-figure__border-text text">ВАЖНО: здесь .list-item — последний возможный элемент в котором мы задаём 
+              отступ, чтобы разделить списки.</p>
           </figure>
-          <p class="main-wraper-block-2-text text"> Казалось бы, можно задать отступ параграфу <p>, либо обёртке <article> для достижения той же 
+          <p class="main-wraper-block-2-text text"> Казалось бы, можно задать отступ параграфу &lang;p&rang;, либо обёртке &lang;article&rang; для достижения той же 
             цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
-          <p class="main-wraper-block-2-text text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
-          <figure class="main-wraper-block-2-figure">
-            <img class="main-wraper-block-2-img" src="/img/main-wraper-block/image6.jpg" alt="Пример кода" width="964" height="164">
+          <p class="main-wraper-block-2-text text__last">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
+          <figure class="main-wraper-block-2-figure figure">
+            <img class="main-wraper-block-2-img img" src="/img/main-wraper-block/image6.jpg" alt="Пример кода" width="964" height="164">
           </figure>
-          <p class="main-wraper-block-2-text text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section. 
+          <p class="main-wraper-block-2-text text__last">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет section. 
             Именно для него задается padding-top, а не div с классом container. Свойства margin, которые стоят по умолчанию необходимо обнулить.</p>
-            <figure class="main-wraper-block-2-figure">
-              <img class="main-wraper-block-2-img" src="/img/main-wraper-block/image7.jpg" alt="Пример изображения и текста, и кода" width="1022" height="504">
-            </figure>
+          <figure class="main-wraper-block-2-figure figure">
+            <img class="main-wraper-block-2-img img" src="/img/main-wraper-block/image7.jpg" alt="Пример изображения и текста, и кода" width="1022" height="504">
+          </figure>
           <p class="main-wraper-block-2-text text">Это необходимо для более простого поиска отступов в будущем — для вас или того, кто будет верстать 
             после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
         </div>
       </div>
       <div class="main-wraper-block-3">
         <div class="container">
-          <h3 class="main-wraper-block-3-title-h2" id="part-3">Для последнего элемента группы отступ всегда обнуляется</h3>
+          <h2 class="main-wraper-block-3-title-h2 title-h2" id="part-3">Для последнего элемента группы отступ всегда обнуляется</h2>
           <p class="main-wraper-block-3-text text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
-          <p class="main-wraper-block-3-text text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
-          <figure class="main-wraper-block-3-figure">
-            <img class="main-wraper-block-3-img" src="/img/main-wraper-block/image8.jpg" alt="Пример изображения и текста, и отступа" width="600" height="600">
+          <p class="main-wraper-block-3-text text__last">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
+          <figure class="main-wraper-block-3-figure figure">
+            <img class="main-wraper-block-3-img img" src="/img/main-wraper-block/image8.jpg" alt="Пример изображения и текста, и отступа" width="600" height="600">
           </figure>
-          <p class="main-wraper-block-3-text text">В соответствии со вторым принципом: последний margin обнуляется, а нижний отступ задаётся через padding 
+          <p class="main-wraper-block-3-text text__last">В соответствии со вторым принципом: последний margin обнуляется, а нижний отступ задаётся через padding 
             для section. Я чаще всего задаю padding для секции с обоих сторон, если расстояние между секциями 100px задаю секциям padding-top:50px и 
             padding-bottom:50px.</p>
-          <figure class="main-wraper-block-3-figure">
-            <img class="main-wraper-block-3-img" src="/img/main-wraper-block/image9.jpg" alt="Пример изображения и текста, и отступа" width="600" height="607">
-            <img class="main-wraper-block-3-img" src="/img/main-wraper-block/image10.jpg" alt="Пример изображения и текста, и отступа" width="1080" height="1058">
+          <figure class="main-wraper-block-3-figure figure">
+            <img class="main-wraper-block-3-img img" src="/img/main-wraper-block/image9.jpg" alt="Пример изображения и текста, и отступа" width="600" height="607">
+            <img class="main-wraper-block-3-img img__spec" src="/img/main-wraper-block/image10.jpg" alt="Пример изображения и текста, и отступа" width="1080" height="1058">
           </figure>
           <p class="main-wraper-block-3-text text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
-          <figure class="main-wraper-block-3-figure">
-            <img class="main-wraper-block-3-img" src="/img/main-wraper-block/image11.jpg" alt="Пример футера на странице сайта" width="1080" height="88">
-            <img class="main-wraper-block-3-img" src="/img/main-wraper-block/image12.jpg" alt="Пример футера но уже в виде кода" width="806" height="475">
+          <figure class="main-wraper-block-3-figure figure">
+            <img class="main-wraper-block-3-img img" src="/img/main-wraper-block/image11.jpg" alt="Пример футера на странице сайта" width="1080" height="88">
+            <img class="main-wraper-block-3-img img__spec" src="/img/main-wraper-block/image12.jpg" alt="Пример футера но уже в виде кода" width="806" height="475">
           </figure>
-          <p class="main-wraper-block-3-text text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню 
+          <p class="main-wraper-block-3-text text__last">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню 
             задаются так:</p>
-            <figure class="main-wraper-block-3-figure">
-              <img class="main-wraper-block-3-img" src="/img/main-wraper-block/image13.jpg" alt="Пример пример использование псевдокласса :last-child" width="500" height="383">
-            </figure>
+          <figure class="main-wraper-block-3-figure figure">
+            <img class="main-wraper-block-3-img img" src="/img/main-wraper-block/image13.jpg" alt="Пример пример использование псевдокласса :last-child" width="500" height="383">
+          </figure>
         </div>
       </div>
     </section>
@@ -136,7 +133,7 @@
     <section class="footer-section">
       <div class="footer-section-block">
         <div class="container">
-          <h2 class="footer-section-block-title-h2 title-h2">Подытожим:</h2>
+          <h2 class="footer-section-block-title-h2">Подытожим:</h2>
           <ul class="footer-section-block-list">
             <li class="footer-section-block-list-li">— отступы задаём от предыдущего элемента к следующему</li>
             <li class="footer-section-block-list-li">— используем только margin-right и margin-bottom</li>
@@ -144,7 +141,7 @@
             <li class="footer-section-block-list-li">— внутренний отступ задаём самому верхнему элементу в дом дереве</li>
             <li class="footer-section-block-list-li">— последнему элементу группы отступ всегда обнуляем</li>
           </ul>
-          <p class="footer-section-block-text text">Конечно бывают исключения. Ведь макеты бывают 
+          <p class="footer-section-block-text text__last">Конечно бывают исключения. Ведь макеты бывают 
             различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или 
             простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
         </div>
