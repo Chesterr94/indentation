@@ -1,0 +1,22 @@
+.footer-section{
+  background: #F1F1F1;
+  border-radius: 10px;
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 50px; 
+}
+
+.footer-section-block-title-h2{
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+  padding-bottom: 20px;
+}
+
+
+.footer-section-block-list-li{
+  padding-bottom: 10px;
+}
+
