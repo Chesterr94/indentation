@@ -1,13 +1,41 @@
 .main-wraper-block{
   display: flex;
+  width: 1080px;
+  flex-wrap:wrap;
 
 }
 
 .main-wraper-block-figure{
+  display: inline-block;
   width: 560px;
-  height: 415px;
+}
+
+.main-wraper-block-figure-img{
+  display: inline-block;
+  width: 560px;
+  background-size: cover;
+  padding: 0 0 30px;
+}
+
+.wraper-header-nav-title-h2{
+  font-family:"roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+  padding-bottom: 20px;
+}
+
+.main-wraper-block-figure-img: :last-child{
+  padding: 0;
 }
 
 .main-wraper-block-text{
   width: 490px;
+}
+
+.main-wraper-block__text{
+  display: inline-block;
+  width: 490px;
+
 }
